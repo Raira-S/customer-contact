@@ -106,6 +106,10 @@ SEARCH_CUSTOMER_COMMUNICATION_INFO_TOOL_NAME = "search_customer_communication_to
 SEARCH_CUSTOMER_COMMUNICATION_INFO_TOOL_DESCRIPTION = "顧客とのやりとりに関する情報を参照したい時に使う"
 SEARCH_WEB_INFO_TOOL_NAME = "search_web_tool"
 SEARCH_WEB_INFO_TOOL_DESCRIPTION = "自社サービス「HealthX」に関する質問で、Web検索が必要と判断した場合に使う"
+#変更
+# 顧客とサービスデータを組み合わせた提案を生成するTool
+# GENERATE_CUSTOMER_PROPOSAL_TOOL_NAME = "generate_customer_proposal_tool"
+# GENERATE_CUSTOMER_PROPOSAL_TOOL_DESCRIPTION = "顧客データとサービスデータを参照して、新しい提案を生成したい時に使う"
 
 
 # ==========================================

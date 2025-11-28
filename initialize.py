@@ -148,7 +148,15 @@ def initialize_agent_executor():
             name = ct.SEARCH_WEB_INFO_TOOL_NAME,
             func=search.run,
             description=ct.SEARCH_WEB_INFO_TOOL_DESCRIPTION
-        )
+        ),
+#変更
+#        # 顧客とサービスデータを組み合わせた提案を生成するTool
+#        Tool(
+#            name = ct.GENERATE_CUSTOMER_PROPOSAL_TOOL_NAME,
+#            func=lambda inputs: utils.run_customer_proposal_chain(inputs["customer"], inputs["service"]),
+# #            func=utils.run_customer_proposal_chain(inputs["customer"], inputs["service"]),
+#            description=ct.GENERATE_CUSTOMER_PROPOSAL_TOOL_DESCRIPTION
+#        ),
     ]
 
     # Agent Executorの作成

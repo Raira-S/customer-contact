@@ -197,6 +197,45 @@ def run_customer_doc_chain(param):
 
     return ai_msg["answer"]
 
+#変更
+# def run_customer_proposal_chain(customer_input, service_input):
+#     """
+#     顧客データとサービスデータを参照して新たな提案を生成
+
+#     Args:
+#         customer_input: 顧客に関する入力データ
+#         service_input: サービスに関する入力データ
+
+#     Returns:
+#         提案内容
+#     """
+#     # 顧客データを取得
+#     customer_response = st.session_state.customer_doc_chain.invoke(
+#         {"input": customer_input, "chat_history": st.session_state.chat_history}
+#     )
+#     customer_data = customer_response["answer"]
+
+#     # サービスデータを取得
+#     service_response = st.session_state.service_doc_chain.invoke(
+#         {"input": service_input, "chat_history": st.session_state.chat_history}
+#     )
+#     service_data = service_response["answer"]
+
+#     # 提案を生成
+#     proposal = f"顧客データ: {customer_data}\nサービスデータ: {service_data}\n\n"
+#     proposal += "これらの情報を基に、以下の提案を行います:\n"
+#     proposal += "1. 顧客のニーズに合った新しいサービスを提供\n"
+#     proposal += "2. 顧客の過去の利用履歴に基づいた特別なオファーを作成\n"
+
+#     # 会話履歴に追加
+#     st.session_state.chat_history.extend([
+#         HumanMessage(content=f"顧客入力: {customer_input}, サービス入力: {service_input}"),
+#         AIMessage(content=proposal)
+# #         AIMessage(content=ai_msg["answer"])
+#     ])
+# 
+#     return proposal 
+##     return ai_msg["answer"] 
 
 def delete_old_conversation_log(result):
     """
